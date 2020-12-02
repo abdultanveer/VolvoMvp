@@ -1,10 +1,10 @@
 package com.next.volvomvp.main;
 
-public class MainPresenter implements MainContract.presenter {
-    MainContract.view view;
+public class MainPresenter implements MainContract.presenter {//2//9
+    MainContract.view view;//12
 
     public MainPresenter(MainActivity mainActivity) {
-        view = mainActivity; //wiring
+        view = mainActivity; //wiring//13
     }
 
 
@@ -12,6 +12,6 @@ public class MainPresenter implements MainContract.presenter {
     @Override
     public void somebodyClickedButton() {
         // hey mr view please update your textview to hello mvp
-        view.plzUpdateTextview("hello mvp");
+        view.plzUpdateTextview("hello mvp");//14
     }
 }
