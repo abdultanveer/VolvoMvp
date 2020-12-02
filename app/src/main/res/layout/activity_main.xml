@@ -18,13 +18,24 @@
 
     <Button
         android:id="@+id/buttonMy"
-        android:onClick="clickHandler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="108dp"
+        android:onClick="clickHandler"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/mTextview"
         app:layout_constraintStart_toStartOf="@+id/mTextview" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

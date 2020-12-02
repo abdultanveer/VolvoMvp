@@ -1,6 +1,6 @@
-package com.next.volvomvp.data;
+package com.next.volvomvp.data.source;
 
-import com.next.volvomvp.data.local.LocalDataSource;
+import com.next.volvomvp.data.source.local.LocalDataSource;
 
 
 //main point of contact for both local and remote data source
@@ -16,5 +16,10 @@ LocalDataSource localDataSource;
     public void  getTodonotefromDb(onNoteLoadedDbCallback callback){
         localDataSource.getTodonotefromDb(callback);//repository decides to get data from local datasource becoz no internet
 
+    }
+
+    @Override
+    public void saveNote(String name) {
+        localDataSource.saveNote(name);
     }
 }

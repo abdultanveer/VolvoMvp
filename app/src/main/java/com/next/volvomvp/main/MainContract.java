@@ -3,7 +3,7 @@ package com.next.volvomvp.main;
 public interface MainContract {//3
     //view to presenter
     interface presenter{//4
-        public void somebodyClickedButton();//5
+        public void somebodyClickedButton(String name);//5
     }
     //presenter speaking to view
     interface view{  //switchboard 10
