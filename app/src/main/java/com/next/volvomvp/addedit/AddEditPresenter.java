@@ -1,4 +1,4 @@
-package com.next.volvomvp.add;
+package com.next.volvomvp.addedit;
 
 import com.next.volvomvp.data.TodoNote;
 import com.next.volvomvp.data.source.NotesDataSource;

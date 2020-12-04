@@ -1,4 +1,4 @@
-package com.next.volvomvp.add;
+package com.next.volvomvp.addedit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,9 +26,11 @@ public class AddEditActivity extends AppCompatActivity implements AddEditContrac
 
     @Override
     public void loadDataListview(ArrayList<TodoNote> notes) {
+        TodoAdapter todoAdapter = new TodoAdapter(notes, this);
         ArrayAdapter<TodoNote> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, notes);
-        noteListView.setAdapter(adapter);
+
+        noteListView.setAdapter(todoAdapter);
 
     }
 }
