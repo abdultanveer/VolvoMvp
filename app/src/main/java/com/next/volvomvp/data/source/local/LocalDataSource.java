@@ -20,6 +20,11 @@ LocalDb localDb;
     }
 
     @Override
+    public void getNotesDb(onNotesloadedCallback notesCallback) {
+        localDb.getNotes(notesCallback);
+    }
+
+    @Override
     public void saveNote(String name) {
         localDb.saveNote(name);
     }
